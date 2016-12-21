@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "materialize-css": "^0.97.8",
+    "gulp": "^3.9.1",
+    "jquery": "^2.1.1",
+    "laravel-elixir": "^6.0.0-14",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "axios": "^0.15.3",
+    "font-awesome": "^4.7.0"
+  }
+}
