@@ -11,6 +11,7 @@ class TableController extends Controller
         libxml_use_internal_errors(true);
 
         if (($xml = simplexml_load_string($request->get('xml'))) === false){
+            $request->session()->flash('error', 'XML Inválido!');
             return redirect('/');
         }
 

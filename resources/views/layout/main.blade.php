@@ -20,7 +20,7 @@
     <nav>
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">XML</a>
+                <a href="/" class="brand-logo">XML</a>
                 {{--<ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="sass.html">Sass</a></li>
                     <li><a href="badges.html">Components</a></li>
@@ -28,7 +28,8 @@
                 </ul>--}}
             </div>
         </div>
-    </nav></header>
+    </nav>
+</header>
 {{--/HEADER--}}
 
 
@@ -38,9 +39,9 @@
 </main>
 
 
+<script type="text/javascript" src="/js/app.js"></script>
 @yield('foot')
 
-<script type="text/javascript" src="/js/app.js"></script>
 
 </body>
 </html>
