@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('form');
 });
 
-Route::get('/table', function () {
-    return redirect('/');
-});
+Route::get('/table',"TableController@index");
 
-Route::post('/table',"TableController@index");
+Route::post('/table',"TableController@novo");
