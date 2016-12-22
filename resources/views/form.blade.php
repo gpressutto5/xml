@@ -25,7 +25,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">code</i>
-                                <textarea id="xml" class="materialize-textarea"></textarea>
+                                <textarea id="xml" name="xml" class="materialize-textarea"></textarea>
                                 <label for="xml">Cole aqui seu xml</label>
                             </div>
                         </div>

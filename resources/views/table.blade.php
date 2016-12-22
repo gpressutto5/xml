@@ -1,15 +1,18 @@
 @extends('layout.main')
 
-@section('head')
+{{--@section('head')
     <style>
-        body {
+        html,
+        body,
+        main,
+        .fullheigh {
             height: 100%;
         }
-        footer {
-            position: relative;
+        .rolar {
+            overflow-y: scroll;
         }
     </style>
-@endsection
+@endsection--}}
 
 @section('content')
 {{--    <div class="container">
@@ -50,19 +53,17 @@
             </div>
         </div>
     </div>--}}
-<div class="container">
-    <div class="row">
-        <div class="col s3">
-            <div class="collection">
-                @foreach(range(26895,26905) as $ra)
-                    <a href="#!" class="collection-item"><span class="badge">{{ rand(1, 4) }}</span>{{ $ra }}</a>
-                @endforeach
-            </div>
+<div class="row fullheigh">
+    <div class="col s3 fullheigh rolar">
+        <div class="collection fullheigh">
+            @foreach($conexoes as $usuario => $dispositivos)
+                <a href="#!" class="collection-item"><span class="badge">{{ count($dispositivos) }}</span>{{ $usuario }}</a>
+            @endforeach
         </div>
-        <div class="col s9">
-            <div class="card-panel" style="width: 100%;">
-                Teste
-            </div>
+    </div>
+    <div class="col s9">
+        <div class="card-panel" style="width: 100%; position: fixed;">
+            Informações:
         </div>
     </div>
 </div>

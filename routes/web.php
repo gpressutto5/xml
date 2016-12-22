@@ -16,9 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/table', function () {
-    return view('table');
+    return redirect('/');
 });
 
-Route::post('/table', function () {
-    return view('table');
-});
+Route::post('/table',"TableController@index");
